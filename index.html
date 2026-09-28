@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JobFinder - Find Your Next Job</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        Job<span>Finder</span>
+      </a>
+
+
+      <nav class="nav-links">
+
+        <a href="index.html" class="active-link">Find Jobs</a>
+         <a href="#companies">Companies</a>
+        <a href="#about">About</a>
+
+        <a href="saved.html">Saved Jobs</a>
+
+        <span id="userName" class="user-name"></span>
+
+        <a href="login.html" id="loginLink">Login</a>
+
+        <a href="signup.html" id="signupLink">Sign Up</a>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+
+      </nav>
+
+
+      <a href="#jobs" class="post-job-btn">Find a Job</a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!--hero section-->
+
+    <section class="hero">
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <p class="hero-tag"> Find your next opportunity </p>
+
+
+          <h1>Find a job you
+            <span>actually love.</span>
+          </h1>
+
+
+          <p class="hero-description">
+            Search thousands of job opportunities from companies
+            looking for talented people like you.
+          </p>
+
+        </div>
+
+
+        <div class="search-box">
+
+
+          <!-- Job Search -->
+
+          <div class="search-field">
+            <span class="search-icon">
+              ⌕
+            </span>
+
+            <input type="text" id="searchInput" placeholder="Job title, keywords...">
+
+          </div>
+
+
+          <!-- Location Search -->
+
+          <div class="search-field">
+
+            <span class="location-icon">
+              ⌖
+            </span>
+            <input type="text" id="locationInput" placeholder="Location">
+
+          </div>
+
+          <button id="searchBtn" class="search-btn">
+
+            Search Jobs
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="jobs" class="jobs-section">
+
+      <div class="container">
+
+
+        <div class="section-header">
+
+          <div>
+
+            <p class="section-label">
+              EXPLORE OPPORTUNITIES
+            </p>
+
+
+            <h2>Latest job openings</h2>
+
+
+            <p class="job-count">
+
+              <span id="jobCount">0</span>
+                jobs available
+            </p>
+
+          </div>
+
+
+          <!-- Sort -->
+
+          <div class="sort-box">
+
+            <label for="sortJobs">
+              Sort by
+            </label>
+
+
+            <select id="sortJobs">
+
+              <option value="recent">
+                Most Recent
+              </option>
+
+              <option value="salary-high">
+                Salary: High to Low
+              </option>
+
+              <option value="salary-low">
+                Salary: Low to High
+              </option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <div class="filters">
+
+          <button class="filter-btn active" data-filter="all">All Jobs</button>
+          <button class="filter-btn" data-filter="full-time">Full Time</button>
+          <button class="filter-btn" data-filter="part-time"> Part Time</button>
+          <button class="filter-btn" data-filter="internship">Internship</button>
+          <button class="filter-btn" data-filter="remote">Remote</button>
+
+        </div>
+
+
+        <!-- job cards-->
+
+        <div id="jobsContainer" class="jobs-container">
+
+          <!-- Job cards will be created by JavaScript -->
+
+        </div>
+
+
+        <div id="noJobs" class="no-jobs hidden">
+
+          <div class="no-jobs-icon">
+            ⌕
+          </div>
+
+
+          <h3>No jobs found</h3>
+          <p>Try changing your search or filter.</p>
+
+          <button id="resetSearch" class="reset-btn">Reset Search</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="companies" class="companies-section">
+
+      <div class="container">
+
+        <p class="section-label"> TRUSTED COMPANIES</p>
+
+        <h2> Companies hiring now </h2>
+
+
+        <div class="companies-list">
+
+          <div class="company-name">
+            Google
+          </div>
+
+          <div class="company-name">
+            Microsoft
+          </div>
+
+          <div class="company-name">
+            Amazon
+          </div>
+
+          <div class="company-name">
+            Adobe
+          </div>
+
+          <div class="company-name">
+            Spotify
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!--about section-->
+
+    <section id="about" class="about-section">
+
+      <div class="container about-content">
+
+
+        <div>
+
+          <p class="section-label">
+            ABOUT JOBFINDER
+          </p>
+
+
+          <h2>
+            Your next opportunity
+            starts here.
+          </h2>
+
+        </div>
+
+
+        <p>
+          JobFinder helps developers and professionals discover
+          relevant job opportunities without making the job search
+          complicated.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- footer-->
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <div>
+
+        <a href="index.html" class="logo"> Job <span>Finder</span> </a>
+
+        <p> Find work that works for you.</p>
+
+      </div>
+
+
+      <p class="copyright">
+        © 2026 JobFinder. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+
+
+</body>
+
+</html>
