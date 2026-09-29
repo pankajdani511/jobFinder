@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobFinder - Sign Up</title>
+
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-page">
+
+        <div class="auth-card">
+
+            <!-- logo -->
+            <a href="index.html" class="auth-logo">
+                Job<span>Finder</span>
+            </a>
+
+            <h1>Create your account</h1>
+
+            <p class="auth-subtitle">
+                Sign up to save jobs and manage your applications.
+            </p>
+
+            
+            <form id="signupForm">
+
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+
+                    <input  type="text" id="signupName" placeholder="Enter your name" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+                </div>
+
+                <p id="signupMessage" class="auth-message"></p>
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="./js/auth.js"></script>
+
+</body>
+
+</html>
