@@ -1,0 +1,275 @@
+/*tablets*/
+
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 18px;
+    }
+    .post-job-btn {
+        display: none;
+    }
+    .hero {
+        padding: 65px 0 45px;
+    }
+    .hero h1 {
+        font-size: 52px;
+    }
+    .search-box {
+        max-width: 760px;
+    }
+    .jobs-container {
+        grid-template-columns: 1fr;
+    }
+    .companies-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 90%;
+    }
+    
+    .navbar {
+        height: auto;
+        padding: 18px 0;
+    }
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        margin-left: 0;
+        padding-top: 12px;
+        border-top: 1px solid #eeeeF2;
+    }
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    .hero {
+        padding: 55px 0 35px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+    .hero-tag {
+        font-size: 10px;
+    }
+
+
+    .search-box {
+        flex-direction: column;
+        padding: 10px;
+        gap: 8px;
+        margin-top: 30px;
+    }
+
+    .search-field {
+        width: 100%;
+        height: 48px;
+        border-right: none;
+        border-bottom: 1px solid #e8e9ee;
+    }
+
+    .search-btn {
+        width: 100%;
+        height: 48px;
+    }
+
+    .jobs-section {
+        padding: 55px 0;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-header h2,
+    .companies-section h2,
+    .about-section h2 {
+        font-size: 27px;
+    }
+
+    .sort-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sort-box select {
+        flex: 1;
+        max-width: 200px;
+    }
+
+
+    /* Filters */
+
+    .filters {
+        margin-top: 25px;
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+
+    /* Job Cards */
+
+    .job-card {
+        padding: 18px;
+    }
+
+    .job-card-top {
+        gap: 10px;
+    }
+
+    .company-logo {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
+
+    .job-details {
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .job-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .companies-section {
+        padding: 55px 0;
+    }
+
+    .companies-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .company-name {
+        min-height: 65px;
+        font-size: 13px;
+    }
+
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-content > p {
+        font-size: 14px;
+    }
+
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .copyright {
+        margin-top: 0 !important;
+    }
+}
+
+
+/* small mobiles */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .nav-links {
+        gap: 7px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .filter-btn {
+        padding: 7px 11px;
+    }
+
+    .companies-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* SAVED JOBS RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .saved-hero {
+        padding: 50px 0 45px;
+    }
+
+    .saved-hero h1 {
+        font-size: 36px;
+    }
+
+    .saved-hero p:not(.section-tag) {
+        font-size: 14px;
+    }
+
+    .saved-jobs-section .section-header {
+        gap: 20px;
+    }
+
+    .browse-jobs-btn {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .saved-hero h1 {
+        font-size: 30px;
+    }
+    .saved-hero {
+        padding: 40px 0;
+    }
+}
