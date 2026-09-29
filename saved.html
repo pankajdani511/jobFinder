@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saved Jobs | JobFinder</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Job<span>Finder</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Find Jobs</a>
+                <a href="index.html#companies">Companies</a>
+                <a href="index.html#about">About</a>
+                <a href="saved.html" class="active-link">
+                    Saved Jobs
+                </a>
+            </nav>
+
+            <a href="index.html#jobs" class="post-job-btn">
+                Find a Job
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Saved Jobs Hero -->
+
+    <section class="saved-hero">
+        <div class="container">
+
+            <p class="section-tag">YOUR COLLECTION</p>
+
+            <h1>
+                Saved <span>Jobs</span>
+            </h1>
+
+            <p>
+                Keep track of the jobs you're interested in
+                and apply when you're ready.
+            </p>
+
+        </div>
+    </section>
+
+
+    
+    <main class="jobs-section saved-jobs-section">
+
+        <div class="container">
+
+            
+            <div class="section-header">
+
+                <div>
+                    <p class="section-tag">BOOKMARKED JOBS</p>
+
+                    <h2>
+                        Your Saved Jobs
+                    </h2>
+
+                    <p class="section-description">
+                        <span id="savedJobCount">0</span>
+                        jobs saved
+                    </p>
+                </div>
+
+                <a href="index.html#jobs" class="browse-jobs-btn">
+                    Browse Jobs
+                </a>
+
+            </div>
+
+
+            <div
+                class="jobs-container"
+                id="savedJobsContainer">
+            </div>
+
+
+            <!-- Empty State -->
+
+            <div
+                class="no-jobs hidden"
+                id="emptySavedJobs">
+
+                <div class="no-jobs-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    No saved jobs yet
+                </h3>
+
+                <p>
+                    When you find a job you like,
+                    click the heart icon to save it here.
+                </p>
+
+                <a
+                    href="index.html#jobs"
+                    class="reset-btn">
+                    Explore Jobs
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <h3 class="footer-logo">JobFinder </h3>
+                <p>Find opportunities that matchyour skills and career goals.</p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Find Jobs</a>
+                <a href="index.html#companies">Companies</a>
+                <a href="index.html#about">About</a>
+                <a href="saved.html">Saved Jobs</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+              © 2026 JobFinder. Built for learning and practice.
+            </p>
+        </div>
+
+    </footer>
+
+
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/saved.js"></script>
+
+</body>
+</html>
